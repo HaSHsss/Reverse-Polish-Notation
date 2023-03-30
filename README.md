@@ -1,10 +1,18 @@
 # Reverse-Polish-Notation
 
+  В данном упражнении необходимо реализовать стековую машину, то есть алгоритм, проводящий вычисления по обратной польской записи.
+Обратная польская нотация или постфиксная нотация — форма записи математических и логических выражений, 
+в которой операнды расположены перед знаками операций. Выражение читается слева направо. 
+Когда в выражении встречается знак операции, выполняется соответствующая операция над двумя ближайшими операндами, 
+находящимися слева от знака операции. Результат операции заменяет в выражении последовательность её операндов и знак, 
+после чего выражение вычисляется дальше по тому же правилу. Таким образом, результатом вычисления всего выражения становится 
+результат последней вычисленной операции.
 
-Reverse Polish notation (RPN) is a mathematical notation in which every operator follows all of its operands, in contrast to Polish notation, which puts the operator in the prefix position.
+  Например, выражение (1 + 2) * 4 + 3 в постфиксной нотации будет выглядеть так: 1 2 + 4 * 3 +, а результат вычисления: 15. 
+Другой пример - выражение: 7 - 2 * 3, в постфиксной нотации: 7 2 3 * -, результат: 1.
 
-For the given project, I have identified two key areas which can/may have variations;
+  Реализуйте функцию calcInPolishNotation, которая принимает массив, каждый элемент которого содержит число или знак операции (+, -, *, /). 
+Функция должна вернуть результат вычисления по обратной польской записи.
 
-The methods by which we provide the data <- Lets call it Process
-The algorithm, Reverse Polish Notation and Polish Notation <- Lets call it Notation
-So I decided to create interfaces for Notation and Process. Hence, we have list of classes under sub-folder 'Process' and 'Notation'
+В этом модуле реализовано вычесленеие и обработка возможных ошибок
+
